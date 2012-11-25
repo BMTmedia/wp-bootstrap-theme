@@ -1,0 +1,66 @@
+﻿/*
+Theme Name: BootstrapWP
+Theme URI: http://bmt.com.ve/
+Description: Basic theme based on Twitter Bootstrap 2.1.1 and WordPress Twenty Ten
+Author: BMT
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: bootstrap, responsive, twentyten
+Text Domain: bootstrapwp
+*/
+
+/* GENERAL */
+
+#wrapper {
+	background-color:#FFF;
+	padding:20px;
+}
+
+/* HEADER ZONE */
+
+#header-zone{}
+
+.global-menu {
+	padding-top:20px;
+}
+
+/* MIDDLE-ZONE */
+
+#middle-zone{}
+
+.side-bar {
+	background-color:#EEEEEE;
+}
+
+/* FOOTER ZONE */
+
+#footer-zone {	
+}
+
+#footer-menu {
+	text-align:center;
+	background-color:#333333;
+	padding-top:20px;
+}
+
+#footer-menu ul li {
+	float:none;
+	display:inline-block;
+}
+
+#footer-menu ul li a {
+	color:#FFFFFF;
+}
+
+#footer-menu ul li a:hover {
+	color:#333;
+}
+
+#footer-zone .credits-sector {
+	background-color:#000000;
+}
+
+#footer-zone .credits-sector a {
+	color:#999999;
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Generic Styles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap Styles Regular -->
+<link href="bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+/*padding-top: 60px;*/ /* If fixed navbar. 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+<!-- Bootstrap Styles Responsive -->
+<link href="bootstrap-responsive.css" rel="stylesheet">
+
+<!-- IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="header-zone">
+	<!-- 
+	NAVIGATION (HORIZONTAL GLOBAL MENUS)
+	http://twitter.github.com/bootstrap/components.html#navbar
+	-->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">BMT</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Menu Item 1</a></li>
+						<li><a href="#">Menu Item 2</a></li>
+						<li><a href="#">Menu Item 3</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item 4<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Menu Child 1</a></li>
+								<li><a href="#">Menu Child 2</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Menu Child 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Menu Item 5</a></li>
+					</ul>
+					<form class="navbar-form pull-right">
+						<input type="text" class="search-query span2" placeholder="Buscar">
+					</form>					
+					<ul class="nav pull-right">
+						<li><a href="#">Option 1</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="#">Option 2</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="#">Option 3</a></li>
+					</ul>
+				</div><!-- .nav-collapse -->
+			</div>
+		</div>
+	</div><!-- .navbar -->
+</div><!-- #header-zone -->
+
+<div id="middle-zone">
+	<div class="container">
+	
+		<!--
+		GENERAL ROWS AND COLUMNS: Grid System
+		http://twitter.github.com/bootstrap/scaffolding.html
+		-->
+	
+		<div class="row">
+			<!-- navigation-bar -->
+			<div class="span3">
+			
+			<!--
+			VERTICAL MENUS (STACKED)
+			http://twitter.github.com/bootstrap/components.html#navs
+			-->
+			<h3>Tabs Menu</h3>
+			<ul class="nav nav-tabs nav-stacked">
+				<li class="active"><a href="#">Sidebar Menu 1</a></li>
+				<li><a href="#">Sidebar Menu 2</a></li>
+				<li><a href="#">Sidebar Menu 3</a></li>
+				<li><a href="#">Sidebar Menu 4</a></li>
+			</ul>
+			
+			<br>
+			
+			<h3>Pills Menu</h3>
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#">Sidebar Menu 1</a></li>
+				<li><a href="#">Sidebar Menu 2</a></li>
+				<li><a href="#">Sidebar Menu 3</a></li>
+				<li><a href="#">Sidebar Menu 4</a></li>
+			</ul>
+			
+			<br>
+			
+			<h3>Nav List Simple</h3>
+			<ul class="nav nav-list">
+				<li class="nav-header">Nav List Header 1</li>
+				<li class="active"><a href="#">Sidebar Menu 1</a></li>
+				<li><a href="#">Sidebar Menu 2</a></li>
+				<li><a href="#">Sidebar Menu 3</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Sidebar Menu 4</a></li>
+				<li class="nav-header">Nav List Header 2</li>
+				<li><a href="#">Sidebar Menu 5</a></li>
+				<li><a href="#">Sidebar Menu 6</a></li>
+			</ul>
+			
+			<br>
+			
+			<h3>Nav List Icons</h3>
+			<ul class="nav nav-list">
+				<li class="nav-header">Nav List Header 1</li>
+				<li class="active"><a href="#"><i class="icon-home"></i> Sidebar Menu 1</a></li>
+				<li><a href="#"><i class="icon-book"></i> Sidebar Menu 2</a></li>
+				<li><a href="#"><i class="icon-camera"></i> Sidebar Menu 3</a></li>
+				<li class="divider"></li>
+				<li><a href="#"><i class="icon-inbox"></i> Sidebar Menu 4</a></li>
+			</ul>			
+			
+			</div>
+			<!-- content-bar -->
+			<div class="span9">
+			
+				<!--
+				BREADCRUMB
+				http://twitter.github.com/bootstrap/components.html#breadcrumbs
+				-->
+				
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="icon-home"></i> Home</a> <span class="divider">/</span></li>
+					<li><a href="#"><i class="icon-book"></i> Library</a> <span class="divider">/</span></li>
+					<li class="active">Data</li>
+				</ul><!-- .breadcrumb -->
+				
+				<!--
+				HORIZONTAL MENUS
+				http://twitter.github.com/bootstrap/components.html#navs
+				-->
+				<h2>Horizontal Navigation</h2><br>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Item 4<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Child 1</a></li>
+							<li><a href="#">Child 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Child 3</a></li>
+						</ul>
+					</li>					
+  					<li><a href="#">Item 5</a></li>
+				</ul>
+				
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Item 4<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Child 1</a></li>
+							<li><a href="#">Child 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Child 3</a></li>
+						</ul>
+					</li>					
+  					<li><a href="#">Item 5</a></li>
+				</ul>
+
+				<!--
+				ALERTS
+				http://twitter.github.com/bootstrap/components.html#alerts
+				-->
+				<h2>Alert Messages</h2><br>
+				
+				<div class="alert">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					This is an <strong>Alert Message</strong>
+				</div>
+
+				<div class="alert alert-error">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					This is an <strong>Error Alert Message</strong>
+				</div>
+				
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					This is a <strong>Success Alert Message</strong>
+				</div>
+				
+				<div class="alert alert-info">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					This is an <strong>Info Alert Message</strong>
+				</div>
+				
+				<!--
+				TABS NAVIGATION
+				-->
+				<h2>Tabs Navigation</h2><br>
+				
+				<!-- HORIZONTAL TABS -->
+				<h4>Tabs on Top</h4><br>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1a" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2a" data-toggle="tab">Section 2</a></li>
+					</ul>
+					<div class="tab-content">
+					
+						<div class="tab-pane active" id="tab1a">
+							<p>This is the content for Tabs on Top <strong>Section 1.</strong></p>
+						</div>
+						
+						<div class="tab-pane" id="tab2a">
+							<p>This is the content for Tabs on Top <strong>Section 2.</strong></p>
+						</div>
+						
+					</div>
+				</div><!-- .tabbable -->
+				
+				<hr>
+				
+				<!-- TABS BELOW -->
+				<h4>Tabs Below</h4><br>
+				<div class="tabbable tabs-below">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1b" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2b" data-toggle="tab">Section 2</a></li>
+					</ul>
+					<div class="tab-content">
+					
+						<div class="tab-pane active" id="tab1b">
+							<p>This is the content for Tabs Below <strong>Section 1.</strong></p>
+						</div>
+						
+						<div class="tab-pane" id="tab2b">
+							<p>This is the content for Tabs Below <strong>Section 2.</strong></p>
+						</div>
+						
+					</div>
+				</div><!-- .tabbable -->
+				
+				<hr>
+				
+				<!-- TABS LEFT -->
+				<h4>Tabs on the Left</h4><br>
+				<div class="tabbable tabs-left">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1c" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2c" data-toggle="tab">Section 2</a></li>
+					</ul>
+					<div class="tab-content">
+					
+						<div class="tab-pane active" id="tab1c">
+							<p>This is the content for Tabs on the Left <strong>Section 1.</strong></p>
+						</div>
+						
+						<div class="tab-pane" id="tab2c">
+							<p>This is the content for Tabs on the Left <strong>Section 2.</strong></p>
+						</div>
+						
+					</div>
+				</div><!-- .tabbable -->
+				
+				<hr>
+				
+				<!-- TABS RIGHT -->
+				<h4>Tabs on the Right</h4><br>
+				<div class="tabbable tabs-right">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1d" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2d" data-toggle="tab">Section 2</a></li>
+					</ul>
+					<div class="tab-content">
+					
+						<div class="tab-pane active" id="tab1d">
+							<p>This is the content for Tabs on the Right <strong>Section 1.</strong></p>
+						</div>
+						
+						<div class="tab-pane" id="tab2d">
+							<p>This is the content for Tabs on the Right <strong>Section 2.</strong></p>
+						</div>
+						
+					</div>
+				</div><!-- .tabbable -->
+				
+				<hr>
+				
+				<h1>Content and Columns Samples</h1><br>
+				
+				<div class="row"><!-- This is a nested Row inside a .span9 class. Its nested elements should add up the number of the parent row -->
+					<div class="span3">
+						<h3>This is the content of the First Nested Column <br><small>This is a subtitle</small></h3>
+						<p>This is a paragraph, including a <a href="#">link</a>, a <strong>strong</strong>, as well as <em>italics</em>, and so on.</p>
+					</div>
+					<div class="span3">
+						<h3>This is the content of the Second Nested Column <br><small>This is a subtitle</small></h3>
+						<p>This is a paragraph, including a <a href="#">link</a>, a <strong>strong</strong>, as well as <em>italics</em>, and so on.</p>
+						<p>We are adding more text in order to check how it works with different hights.</p>
+						<div class="nav-collapse"><div class="alert"><p>We could place any content inside this columns, and this paragraph will be hidden when we resize our window to smaller sizes.</p></div></div>
+					</div>
+					<div class="span3">
+						<h3>This is the content of the Third Nested Column <br><small>with 3 more nested columns</small></h3>
+						<p>This is a paragraph, including a <a href="#">link</a>, a <strong>strong</strong>, as well as <em>italics</em>, and so on.</p>
+						<div class="row" style="text-align:center;">
+							<div class="span1" style="background-color:#CCCCCC"><h4>Column One</h4></div>
+							<div class="span1" style="background-color:#CCCCCC"><h4>Column Two</h4></div>
+							<div class="span1" style="background-color:#CCCCCC"><h4>Column Three</h4></div>
+						</div>
+					</div>
+				</div><!-- .row -->
+				
+				<hr>
+				
+				<!--
+				BUTTONS
+				http://twitter.github.com/bootstrap/components.html#buttonGroups
+				-->
+				<h2>Buttons</h2><br >
+				
+				<div class="row">
+					<!-- Regular Buttons -->
+					<div class="span3">
+						<h3>Regular Buttons <br><small>Button sizes and button groups</small></h3><br>
+						<button class="btn btn-large">Large Button</button><br><br>
+						<button class="btn">Regular Button</button><br><br>
+						<button class="btn disabled">Regular Button (Disabled)</button><br><br>
+						<button class="btn active">Regular Button (Active)</button><br><br>
+						<button class="btn btn-small">Small Button</button><br><br>
+						<button class="btn btn-mini">Small Button</button><br><br>
+						<div class="btn-group">
+							<button class="btn">Group Item 1</button>
+							<button class="btn">Group Item 2</button>
+						</div>
+						<br>
+					</div>
+					<!-- Button Styles -->
+					<div class="span3">
+						<h3>Button Styles</h3><br>
+						<button class="btn btn-danger">Button Danger</button><br><br>
+						<button class="btn btn-warning">Button Warning</button><br><br>
+						<button class="btn btn-inverse">Button Inverse</button><br><br>
+						<button class="btn btn-info">Button Info</button><br><br>
+						<button class="btn btn-success">Button Success</button>
+					</div>
+					<!-- 
+					Dropdowns and Dropups 
+					http://twitter.github.com/bootstrap/components.html#buttonDropdowns
+					-->
+					<div class="span3">
+						<h3>Buttons with Dropdowns and Dropups</h3><br>
+						<!-- Regular Dropdown -->
+						<div class="btn-group">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Regular Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div><br>
+						<!-- Icons Dropdown -->
+						<div class="btn-group">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-briefcase"></i> Icons Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-bell"></i> Item 1</a></li>
+								<li><a href="#"><i class="icon-check"></i> Item 2</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-edit"></i> Item 3</a></li>
+							</ul>
+						</div><br>
+						<!-- Dropups -->
+						<div class="btn-group dropup">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-briefcase"></i> Dropup <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-bell"></i> Item 1</a></li>
+								<li><a href="#"><i class="icon-check"></i> Item 2</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-edit"></i> Item 3</a></li>
+							</ul>
+						</div><br>
+						<!-- Split Buttons with Dropdown and Dropup -->
+						<!-- Split Dropdown -->
+						<div class="btn-group">
+							<button class="btn">Dropdown</button>
+							<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div><br>
+						<!-- Split Dropup-->
+						<div class="btn-group dropup">
+							<button class="btn">Dropdown</button>
+							<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Item 3</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<!--
+				TABLES, LABELS, BADGES, CHECKBOX, RADIO, SELECT, INPUT AND MORE.
+				-->
+				
+				<h2>Tables, Labels, Badges and Miscellaneous Components</h2>
+				
+				<table class="table table-bordered table-striped">
+					<caption>This is the Caption</caption>
+					<thead>
+						<tr>
+							<th>Table Header 1</th>
+							<th>Table Header 2</th>
+							<th>Table Header 3</th>
+							<th>Table Header 4</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>Table Footer 1</td>
+							<td>Table Footer 2</td>
+							<td>Table Footer 3</td>
+							<td>Table Footer 4</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td><h4>Regular table content. Including:</h4></td>
+							<td>
+								<p>A paragraph of text with <strong>strong</strong> and <em>italics</em>, as well as <a href="#">links</a>, and other standard styles.</p>								
+							</td>
+							<td><h5>Now we are using a title <small>with a subtitle</small></h5></td>
+							<td><a class="btn btn btn-small btn-info" href="#">A Button</a></td>
+						</tr>
+						<!--
+						LABELS
+						http://twitter.github.com/bootstrap/components.html#labels
+						-->
+						<tr>
+							<td><h4>Labels</h4></td>
+							<td>
+								<span class="label">Default</span>
+							</td>
+							<td>
+								<span class="label label-success">Success</span>
+								<span class="label label-warning">Warning</span>
+								<span class="label label-important">Important</span>
+								<span class="label label-info">Info</span>
+								<span class="label label-inverse">Inverse</span>
+							</td>
+							<td>
+							</td>
+						</tr>
+						<!--
+						BADGES
+						http://twitter.github.com/bootstrap/components.html#badges
+						-->
+						<tr>
+							<td><h4>Badges</h4></td>
+							<td>
+								<span class="badge">Default</span>
+							</td>
+							<td>
+								<span class="badge badge-success">Success</span>
+								<span class="badge badge-warning">Warning</span>
+								<span class="badge badge-important">Important</span>
+								<span class="badge badge-info">Info</span>
+								<span class="badge badge-inverse">Inverse</span>
+							</td>
+							<td>
+							</td>
+						</tr>
+						<!--
+						RADIOS AND CHECKBOX and other Components
+						http://twitter.github.com/bootstrap/javascript.html#buttons						
+						-->
+						<tr>
+							<td><h4>Inputs and Textarea</h4></td>
+							<td>
+								<input class="btn" type="button" value="Classic Button"><br><br>
+								<input class="btn" type="submit" value="Submit Button"><br><br>
+								<input type="text" value="Classic Input Text"><br>
+								<input type="password" value="Password"><br>
+								<input type="checkbox"><br>
+								<input class="radio inline" type="radio">								
+							</td>
+							<td>
+								<textarea rows="3">This is a text area with a large that. So now we can see the scrollbar on this small box. If you can't see it, resize your browser.</textarea>
+							</td>
+							<td>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<!-- PAGER (PREVIOUS / NEXT) -->
+				<h2>Pager</h2><br>
+				<ul class="pager">
+					<li class="previous"><a href="#">&larr; Older</a></li>
+					<li class="next"><a href="#">Newer &rarr;</a></li>
+				</ul><!-- .pager -->
+				
+				<!--
+				PAGINATION
+				http://twitter.github.com/bootstrap/components.html#pagination
+				-->
+				<h2>Pagination</h2><br>
+				<div class="pagination pagination-centered">
+					<ul>
+						<li><a href="#">«</a></li>
+						<li class="active"><a href="#">9</a></li>
+						<li><a href="#">10</a></li>
+						<li><a href="#">11</a></li>
+						<li><a href="#">12</a></li>
+						<li><a href="#">3</a></li>
+						<li class="disabled"><a href="#">...</a></li>
+						<li><a href="#">27</a></li>
+						<li><a href="#">28</a></li>
+						<li><a href="#">29</a></li>
+						<li><a href="#">30</a></li>										
+						<li><a href="#">31</a></li>
+						<li><a href="#">»</a></li>
+					</ul>
+				</div><!-- .pagination -->
+				
+			</div>
+		</div>
+	</div> <!-- .container -->
+</div> <!--#middle-zone-->
+
+<div id="footer-zone">
+</div><!-- #footer-zone -->
+
+<!-- SCRIPTS -->
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<!-- Bootstrap Scripts -->
+<script src="js/bootstrap-transition.js" type="text/javascript"></script>
+<script src="js/bootstrap-alert.js" type="text/javascript"></script>
+<script src="js/bootstrap-modal.js" type="text/javascript"></script>
+<script src="js/bootstrap-dropdown.js" type="text/javascript"></script>
+<script src="js/bootstrap-scrollspy.js" type="text/javascript"></script>
+<script src="js/bootstrap-tab.js" type="text/javascript"></script>
+<script src="js/bootstrap-tooltip.js" type="text/javascript"></script>
+<script src="js/bootstrap-popover.js" type="text/javascript"></script>
+<script src="js/bootstrap-button.js" type="text/javascript"></script>
+<script src="js/bootstrap-collapse.js" type="text/javascript"></script>
+<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
+<script src="js/bootstrap-typeahead.js" type="text/javascript"></script>
+
+</body>
+</html>
